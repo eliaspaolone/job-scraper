@@ -298,6 +298,7 @@ def main():
             if job_id and job_id not in seen_ids and is_in_radius(job):
                 seen_ids.add(job_id)
                 all_jobs.append(job)
+        time.sleep(1.5)  # stay within JSearch free-tier rate limit
 
     all_jobs.sort(
         key=lambda j: j.get("job_posted_at_datetime_utc") or "",
