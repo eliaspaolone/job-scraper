@@ -12,16 +12,9 @@ GMAIL_APP_PASSWORD = os.environ["GMAIL_APP_PASSWORD"]
 RECIPIENT = "eliaspao7@gmail.com"
 
 SEARCH_QUERIES = [
-    "immunology R&D biotech Netherlands",
-    "immunoengineering Netherlands",
-    "drug discovery biotech Netherlands",
-    "drug design biology Netherlands",
-    "PhD immunology Netherlands",
-    "PhD biology Netherlands",
-    "cell therapy biotech Netherlands",
-    "antibody engineering Netherlands",
-    "translational medicine Netherlands",
-    "biopharmaceutical R&D Netherlands",
+    "immunology drug discovery biotech Netherlands",
+    "PhD biology immunology Netherlands",
+    "biotech R&D biopharmaceutical Netherlands",
 ]
 
 AMSTERDAM_RADIUS_CITIES = {
@@ -51,7 +44,7 @@ def fetch_jobs(query):
     params = {
         "query": query,
         "page": "1",
-        "num_pages": "2",
+        "num_pages": "1",
         "date_posted": "3days",
     }
     headers = {
